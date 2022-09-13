@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:rgb(179, 20, 20);
+    --secondary-color:white;
+}
+body{
+    background-color: var(--main-color);
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+.logo{
+    width: 140px;
+    height: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.b{
+    background-color: var(--secondary-color);
+    position: relative;
+    height: 100%;
+}
+.b::before{
+    content: "";
+    width: 50px;
+    height: 25px;
+    border: 10px solid var(--main-color);
+    position: absolute;
+    left: 10px;
+    top: 7.5px;
+    border-radius: 0 25px 25px 0;
+
+}
+.b span{
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    left: 9px;
+    top: 16.5px;
+    z-index: 2;
+    background-color: var(--secondary-color);
+    
+}
+.b::after {
+    content: "";
+    width: 50px;
+    height: 25px;
+    border: 10px solid var(--main-color);
+    position: absolute;
+    left: 10px;
+    top: 27.5px;
+    border-radius: 0 25px 25px 0;
+
+}
+.p {
+    position: relative;
+    height: 100%;
+    border-right: 1px solid var(--secondary-color);
+    
+}
+.p::before {
+    content: "";
+    width: 50px;
+    height: 30px;
+    border: 10px solid var(--secondary-color);
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    border-radius: 0 25px 25px 0;
+
+}
+.p span {
+    width: 11px;
+    height: 11.5px;
+    position: absolute;
+    left: 9px;
+    top: 13.5px;
+    z-index: 2;
+    background-color: var(--main-color);
+
+}
+.p::after {
+    content: "";
+    height: 23px;
+    border-left: 10px solid var(--secondary-color);
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+.form{
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+h6{
+    color: rgb(51, 46, 46);
+    font-weight: 400;
+}
+.username,.password{
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.form-check{
+    margin-top: 10px;
+}
+.login{
+    background-color: #349d34;
+    border: none;
+    margin-bottom: 5px;
+}
+.login:hover{
+    background-color: #349d34;
+}
+.create{
+    border-top: 1px solid #dee2e6;
+    background-color: rgb(244 246 248);
+    padding: 20px 0 ;
+}
